@@ -5,11 +5,11 @@ header {
   background-image: url("https://fungt1.github.io/images/BEUGBRe.jpg");
 }
 
-/* Header/Blog Title */
+/* Header/Blog Title 
 header.masthead {
   text-align: center;
   color: white;
-  /*background-image: url("https://fungt1.github.io/images/BEUGBRe.jpg");*/
+  background-image: url("https://fungt1.github.io/images/BEUGBRe.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -54,6 +54,6 @@ header.masthead .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
+  } */
 }
 
