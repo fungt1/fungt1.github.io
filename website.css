@@ -1,4 +1,9 @@
-
+header {
+  height:100vh;
+  min-height:400px;
+  background-size:cover;
+  background-image: url("https://fungt1.github.io/images/BEUGBRe.jpg");
+}
 
 /* Header/Blog Title */
 header.masthead {
