@@ -1,151 +1,85 @@
-.image {
-   background-color: #490D40;
-   background: url(https://sonorangirl.github.io/Earth-Quotes/img/google-earth-view-South-Iceland3.jpg) no-repeat center center;
-   background-size: cover;
-   height: 570px;
-   margin-top: -20px;
-   
-   .heading {
-      color: white;
-      text-align: center;
-      padding-top: 200px;
-   }
-
-   p {
-      text-align: center;
-      padding: 20px 60px;
-      
-       .btn {
-         background-color: transparent;
-         color: white;
-         border: 1px solid white;
-         padding: 10px;
-         font-size: 1.2em;
-             
-          &:hover {
-             color: #C57ED3;
-             border-color: #C57ED3;
-          }
-      }
-   }
+html, body {
+  height: 100%;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-.navbar {
-  height: 80px;
-  background-color: transparent;
-  border: none;
+a {
+  display: inline-block;
+  list-style: none; 
+  text-decoration: none;
   color: white;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
-}
-
-
-.navbar-default {
+  transition: opacity .125s linear;
   
-   .navbar-brand {
-     margin-top: 10px;
-     color: white;
-        
-      &:hover {
-         color: #C57ED3;
-         border: 1px solid #C57ED3;
-      } 
-   }
-   
-  .navbar-nav {
-    
-    > li {
-      
-      > a {
-        color: white;
-        margin: 10px 5px 5px 5px;
-        
-      }
-      > a:hover, > a:active, > a:focus {
-        color: #C57ED3;
-        border: 1px solid #C57ED3;
-      }
-      > a:visited {
-        color: #C57ED3;
-        text-decoration: none;
-      }
-
-    } //end li
-
-    > .active {
-
-      > a, > a:hover, > a:focus {
-        background-color: transparent;
-        color: #C57ED3;
-      }
-
-    }
-
-  } //end .navbar-nav
-
-  //Collapsed styles
-  .navbar-toggle {
-    border-color: #C57ED3;
-
-      &:hover, &:focus {
-        background-color: #490D40;
-      }
-
-
-
-      .icon-bar {
-        color: #C57ED3;
-        background-color: #C57ED3;
-
-      }
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity .125s linear;
   }
-
-  .navbar-collapse.collapse.in ul {
-    background-color: #490D40;
+  
+  &:visited {
+    color: inherit;
+    text-decoration: none;
   }
-    
-} //end .navbar-default
-
-
-
-/* Solid class attached on scroll past first section */
-
-.navbar.solid {
-  background-color: #490D40;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-
-    .navbar-brand {
-      color: #C57ED3;
-      transition: color 1s ease 0s;
-    }
-
-    .navbar-nav {
-
-       > li {
-
-          > a {
-            color: #C57ED3;
-            transition: color 1s ease 0s;
-          }
-
-       } //end li
-
-    } //end .navbar-nav
-
 }
 
-.about {
-   background-color: #C57ED3;
-   color: #490D40;
-   height: 600px;
-   text-align: center;
-   margin-top: -20px;
-   
-   h2 {
-      padding-top: 220px;
-   }
-   p {
-      padding: 20px 80px;
-   }
+.first-container {
+  background: url(https://images.unsplash.com/photo-1488831861984-179da3647265?dpr=2&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-container {
+  height: 58px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  //text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: background-color 0.2s linear;
+  
+  &.solid-nav {
+    background-color: #aaa;
+    transition: background-color 0.2s linear;
+  }
+  
+  .nav-row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 18px;
+    
+    .nav-logo {
+      display: inline-block;
+      font-weight: 900;
+    }
+    
+    .nav-controls {
+      float: right;
+      
+      a {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
 }
