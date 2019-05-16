@@ -26,7 +26,7 @@ a {
 }
 
 .first-container {
-  background: url(https://fungt1.github.io/images/BEUGBRe.jpg); 
+  background: url(https://fungt1.github.io/images/BEUGBRe.jpg) no-repeat center center;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
