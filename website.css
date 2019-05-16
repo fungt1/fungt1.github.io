@@ -1,4 +1,4 @@
-body {
+html, body {
   height: 100%;
   color: #666666;
   font-family: "Open Sans", sans-serif;
@@ -10,7 +10,7 @@ a {
   display: inline-block;
   list-style: none; 
   text-decoration: none;
-  color: white;
+  color: red;
   transition: opacity .125s linear;
   
   &:hover {
@@ -26,7 +26,7 @@ a {
 }
 
 .first-container {
-  background: url(https://fungt1.github.io/images/BEUGBRe.jpg);
+  background: url("https://fungt1.github.io/images/BEUGBRe.jpg"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
