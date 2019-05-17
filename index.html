@@ -7,6 +7,7 @@
 </head>
 
 <link href="fungt1.github.io/website.css" rel="stylesheet">
+<link href="fungt1.github.io/language.css" rel="stylesheet">
 
 <body>
 
@@ -36,8 +37,10 @@
    <div class="intro-text">
     <div class="h3">Web Developer</div>
         <div class="p">Welcome. This is my homepage</div>
+        <!--<a class="btn btn-default" href="#portfolio">Go and see my projects!</a>-->
   </div>
   </div>
+
 </section>
 
 <div class="abt" id="about">
@@ -46,48 +49,48 @@
     <h3>Learn what I have done</h3>
     <hr></hr>
     <p>Java, HTML, PHP, Scheme, CSS, Javascript, MySQL,<br/> All of these languages are used to built my projects over the years.</p>
-    
-  <a href="#portfolio" class="btn btn-default">Get Started!</a>
+     <a class="btn btn-default" href="#portfolio">Go and see my projects!</a>
   </div> 
 </div>
 <!--End ofAbout-->
+<!--PortFolio-->
 
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-			<h2 class="myH2">regergerg</h2>
-			<p class="myP">ergerger</p>
-			<p class="myP">hjrthterher</p>
-			<p class="myP">sdvdssdv</p>
-				<p class="myP">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-			</p>
+<div class="no-padding text-center" id="portfolio">
+ <div class="container">
+   <h1>Portfolio</h1>
+    <hr></hr>
+  </div>
+ 
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class=" col-6 col-lg-4 col-sm-6">
+        <img src="" class="img-thumbnail" alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+         <img src="" class="img-thumbnail" alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+         <img src="" class="img-thumbnail" alt="Project-1" width="100%" height="auto">
+      </div>
     </div>
-</body>
+    
+    <div class="row no-gutter">
+      <div class=" col-6 col-lg-4 col-sm-6">
+        <img src="" alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+         <img src="" class="img-thumbnail" alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+         <img src="" alt="Project-1" width="100%" height="auto">
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of Portfolio-->
 <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="fungt1.github.io/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-
+    <script src="fungt1.github.io/myfunctions.js"></script>
 </body>
-<script>
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
-</script>
-
 </html>
