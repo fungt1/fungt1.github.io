@@ -146,6 +146,42 @@ section.home .intro-text .p {
         display: block;
     }
 }
+.abt{
+  text-align:center;
+}
+.abt .jumbotron  {
+  background-color:#2273e6;
+}
+.abt h3{
+  
+  color:white;
+  font-size:40px; 
+  
+}
+ hr{
+  width:100px;
+  border-width:3px;
+  
+}
+.abt p{
+  
+  color: rgba(255, 255, 255, 0.7);
+  font-size:20px;
+}
+.btn{
+  border:none;
+  border-radius:300px;
+  font-weight:bold;
+  text-transform:uppercase;
+  
+}
+.btn-default{
+  padding-bottom: 15px;
+  padding-top:15px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 .navTrigger {
