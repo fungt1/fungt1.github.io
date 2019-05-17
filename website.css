@@ -40,8 +40,19 @@ section.home .intro-text .p {
   opacity:1;
   font-family: 'Josefin Sans', sans-serif;
 }
-  }
-
+.btn{
+  
+  border:none;
+  border-radius:300px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.btn-default{
+  padding-bottom: 15px;
+  padding-top:15px;
+  padding-left:30px;
+  padding-right:30px;
+}
 
 .navTrigger {
     display: none;
@@ -52,6 +63,7 @@ section.home .intro-text .p {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
 .abt{
   text-align:center;
 }
@@ -74,19 +86,7 @@ section.home .intro-text .p {
   color: rgba(255, 255, 255, 0.7);
   font-size:20px;
 }
-.btn{
-  border:none;
-  border-radius:300px;
-  font-weight:bold;
-  text-transform:uppercase;
-  
-}
-.btn-default{
-  padding-bottom: 15px;
-  padding-top:15px;
-  padding-left:30px;
-  padding-right:30px;
-}
+
 
 /* Navbar section */
 .nav {
@@ -137,12 +137,15 @@ section.home .intro-text .p {
 .nav div.main_list ul li a:hover {
     color: #00E676;
 }
+
 /* Media qurey section */
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         margin: 0;
     }
 }
+
 @media screen and (max-width:768px) {
     .navTrigger {
         display: block;
@@ -184,75 +187,10 @@ section.home .intro-text .p {
         display: block;
     }
 }
-.no-padding{
-  padding:0;
-  margin-top:-30px;
-}
-
- .col-6{
-  padding: 0 0;
-}
-
-.no-padding h1{
-  padding-top:55px;
-  text-transform:uppercase;
-}
-.no-padding hr{
-  border: 2px solid #d0d0d0;
-}
-.bg-dark{
-  background-color:#222222;
-  color:white;
-}
-
-.primary{
-  border:1px solid #d35400;
-}
-
-.my-font{
-  font-size:20px;
-  
-}
-.bg-dark{
-  padding-top:55px;
-  padding-bottom:30px;
-}
-.padded{
-  padding-top:200px;
-}
-.padded .col-lg-4 a{
- color:#d35400;
-  font-weight:bold;
-}
-
-.list-icon{
-  list-style-type:none;
-  text-decoration:none;
-  }
-.list-icon li{
-  display:inline;
-  padding-right:20px;
-}
-.list-icon .fa{
-  font-size:40px;
-}
-@media (max-width: 992px) {
-  body
-  {
-    background:white;
-  }
-  .opaque-navbar {
-    background-color: black;
-    height: 60px;
-    transition: background-color .5s ease 0s;
-}
-
-}
-
 
 
 /* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
 .navTrigger {
     cursor: pointer;
     width: 30px;
@@ -263,6 +201,7 @@ section.home .intro-text .p {
     top: 0;
     bottom: 0;
 }
+
 .navTrigger i {
     background-color: #fff;
     border-radius: 2px;
@@ -271,12 +210,14 @@ section.home .intro-text .p {
     width: 100%;
     height: 4px;
 }
+
 .navTrigger i:nth-child(1) {
     -webkit-animation: outT 0.8s backwards;
     animation: outT 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
+
 .navTrigger i:nth-child(2) {
     margin: 5px 0;
     -webkit-animation: outM 0.8s backwards;
@@ -284,24 +225,29 @@ section.home .intro-text .p {
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
+
 .navTrigger i:nth-child(3) {
     -webkit-animation: outBtm 0.8s backwards;
     animation: outBtm 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
+
 .navTrigger.active i:nth-child(1) {
     -webkit-animation: inT 0.8s forwards;
     animation: inT 0.8s forwards;
 }
+
 .navTrigger.active i:nth-child(2) {
     -webkit-animation: inM 0.8s forwards;
     animation: inM 0.8s forwards;
 }
+
 .navTrigger.active i:nth-child(3) {
     -webkit-animation: inBtm 0.8s forwards;
     animation: inBtm 0.8s forwards;
 }
+
 @-webkit-keyframes inM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -310,6 +256,7 @@ section.home .intro-text .p {
         -webkit-transform: rotate(45deg);
     }
 }
+
 @keyframes inM {
     50% {
         transform: rotate(0deg);
@@ -318,6 +265,7 @@ section.home .intro-text .p {
         transform: rotate(45deg);
     }
 }
+
 @-webkit-keyframes outM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -326,6 +274,7 @@ section.home .intro-text .p {
         -webkit-transform: rotate(45deg);
     }
 }
+
 @keyframes outM {
     50% {
         transform: rotate(0deg);
@@ -334,6 +283,7 @@ section.home .intro-text .p {
         transform: rotate(45deg);
     }
 }
+
 @-webkit-keyframes inT {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
@@ -345,6 +295,7 @@ section.home .intro-text .p {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
 }
+
 @keyframes inT {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -356,6 +307,7 @@ section.home .intro-text .p {
         transform: translateY(9px) rotate(135deg);
     }
 }
+
 @-webkit-keyframes outT {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
@@ -367,6 +319,7 @@ section.home .intro-text .p {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
 }
+
 @keyframes outT {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -378,6 +331,7 @@ section.home .intro-text .p {
         transform: translateY(9px) rotate(135deg);
     }
 }
+
 @-webkit-keyframes inBtm {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
@@ -389,6 +343,7 @@ section.home .intro-text .p {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
 }
+
 @keyframes inBtm {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -400,6 +355,7 @@ section.home .intro-text .p {
         transform: translateY(-9px) rotate(135deg);
     }
 }
+
 @-webkit-keyframes outBtm {
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
@@ -411,6 +367,7 @@ section.home .intro-text .p {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
 }
+
 @keyframes outBtm {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -422,10 +379,17 @@ section.home .intro-text .p {
         transform: translateY(-9px) rotate(135deg);
     }
 }
+
 .affix {
     padding: 0;
     background-color: #111;
 }
+
+
+
+
+
+
 .myH2 {
 	text-align:center;
 	font-size: 4rem;
