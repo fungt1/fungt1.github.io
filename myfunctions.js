@@ -1,4 +1,5 @@
-  $(window).scroll(function() {
+   <script>
+        $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 console.log("OK");
@@ -13,7 +14,6 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
 });
-
 $(function() {
 $(document).on('click','a.page-scroll',function(event){
   var $anchor=$(this);
