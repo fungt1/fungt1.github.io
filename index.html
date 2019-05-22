@@ -446,7 +446,7 @@ section.home .intro-text .p {
 }
 /*About */
 @import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
- .timeline {
+ .about {
 	 display: flex;
 	 margin: 0 auto;
 	 flex-wrap: wrap;
@@ -454,7 +454,7 @@ section.home .intro-text .p {
 	 max-width: 700px;
 	 position: relative;
 }
- .timeline__content-title {
+ .about__content-title {
 	 font-weight: normal;
 	 font-size: 66px;
 	 margin: -10px 0 0 0;
@@ -464,7 +464,7 @@ section.home .intro-text .p {
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 color: #fff;
 }
- .timeline__content-desc {
+ .about__content-desc {
 	 margin: 0;
 	 font-size: 15px;
 	 box-sizing: border-box;
@@ -473,7 +473,7 @@ section.home .intro-text .p {
 	 font-weight: normal;
 	 line-height: 25px;
 }
- .timeline:before {
+ .about:before {
 	 position: absolute;
 	 left: 50%;
 	 width: 2px;
@@ -483,11 +483,11 @@ section.home .intro-text .p {
 	 background: rgba(255, 255, 255, .07);
 }
  @media only screen and (max-width: 767px) {
-	 .timeline:before {
+	 .about:before {
 		 left: 40px;
 	}
 }
- .timeline-item {
+ .about-item {
 	 padding: 40px 0;
 	 opacity: 0.3;
 	 filter: blur(2px);
@@ -498,7 +498,7 @@ section.home .intro-text .p {
 	 position: relative;
 	 transform: translateY(-80px);
 }
- .timeline-item:before {
+ .about-item:before {
 	 content: attr(data-text);
 	 letter-spacing: 3px;
 	 width: 100%;
@@ -513,10 +513,10 @@ section.home .intro-text .p {
 	 opacity: 0;
 	 right: calc(-100% - 56px);
 }
- .timeline-item:nth-child(even) {
+ .about-item:nth-child(even) {
 	 align-self: flex-end;
 }
- .timeline-item:nth-child(even):before {
+ .about-item:nth-child(even):before {
 	 right: auto;
 	 text-align: right;
 	 left: calc(-100% - 56px);
@@ -525,26 +525,26 @@ section.home .intro-text .p {
 	 border-right: 2px solid rgba(255, 255, 255, .5);
 	 padding-right: 15px;
 }
- .timeline-item--active {
+ .about-item--active {
 	 opacity: 1;
 	 transform: translateY(0);
 	 filter: blur(0px);
 }
- .timeline-item--active:before {
+ .about-item--active:before {
 	 top: 50%;
 	 transition: 0.3s all 0.2s;
 	 opacity: 1;
 }
- .timeline-item--active .timeline__content-title {
+ .about-item--active .about__content-title {
 	 margin: -50px 0 20px 0;
 }
  @media only screen and (max-width: 767px) {
-	 .timeline-item {
+	 .about-item {
 		 align-self: baseline !important;
 		 width: 100%;
 		 padding: 0 30px 150px 80px;
 	}
-	 .timeline-item:before {
+	 .about-item:before {
 		 left: 10px !important;
 		 padding: 0 !important;
 		 top: 50px;
@@ -552,15 +552,15 @@ section.home .intro-text .p {
 		 width: 60px;
 		 border: none !important;
 	}
-	 .timeline-item:last-child {
+	 .about-item:last-child {
 		 padding-bottom: 40px;
 	}
 }
- .timeline__img {
+ .about__img {
 	 max-width: 100%;
 	 box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
 }
- .timeline-container {
+ .about-container {
 	 width: 100%;
 	 position: relative;
 	 padding: 80px 0;
@@ -568,7 +568,7 @@ section.home .intro-text .p {
 	 background-attachment: fixed;
 	 background-size: cover;
 }
- .timeline-container:before {
+ .about-container:before {
 	 position: absolute;
 	 left: 0;
 	 top: 0;
@@ -577,20 +577,20 @@ section.home .intro-text .p {
 	 background: rgba(99, 99, 99, 0.8);
 	 content: "";
 }
- .timeline-header {
+ .about-header {
 	 width: 100%;
 	 text-align: center;
 	 margin-bottom: 80px;
 	 position: relative;
 }
- .timeline-header__title {
+ .about-header__title {
 	 color: #fff;
 	 font-size: 46px;
 	 font-family: Cardo;
 	 font-weight: normal;
 	 margin: 0;
 }
- .timeline-header__subtitle {
+ .about-header__subtitle {
 	 color: rgba(255, 255, 255, .5);
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 font-size: 16px;
@@ -861,47 +861,58 @@ body {
   <div class="container">
    <div class="intro-text">
     <div class="h3">Tyler Fung</div>
-        <div style="font-size:20px" class="p">Welcome to my homepage. I am a Web developer</div>
+        <div style="font-size:20px" class="p">Welcome to my homepage.</div>
          <a class="btn btn-default" style="font-size:15px" href="#portfolio">Go and see my projects!</a>
   </div>
   </div>
 
 </section>
 
-<!--<div class="abt" id="about">
-<div class="jumbotron">
-  <div class="container">
-    <h3>Learn what I have done</h3>
-    <hr></hr>
-    <p>Java, HTML, PHP, Scheme, CSS, Javascript, MySQL,<br/> All of these languages are used to built my projects over the years.</p>
-  </div> 
-</div> -->
-<section class="timeline-container" id="about">
-    <div class="timeline-header">
-        <h2 class="timeline-header__title">Learn what I have done</h2>
-        <h3 class="timeline-header__subtitle">java, HTML, PHP, Scheme, CSS, Javascript, MySQL,<br/> All of these languages are used to built my projects over the years.</h3>
+
+<section class="about-container" id="about">
+    <div class="about-header">
+        <h2 class="about-header__title">Just your everyday web programmer</h2>
+        <h3 class="about-header__subtitle">Java, HTML, PHP, Scheme, CSS, Javascript, MySQL,<br/> All of these languages are used to built my projects over the years.</h3>
     </div>
-    <div class="timeline">
-        <div class="timeline-item" data-text="sdfsdfsddsf">
-            <div class="timeline__content"><img class="timeline__img" src="https://lonelyplanetimages.imgix.net/a/g/hi/t/3cb45f6e59190e8213ce0a35394d0e11-nice.jpg?sharp=10&vib=20&w=1200" />
-                <h2 class="timeline__content-title">asdadsad</h2>
-                <p class="timeline__content-desc">sdnfdiofnsdufjnsidufnsdikfunjsdfkiunjsdvujnsdiuvnsidvn.</p>
+    <div class="about">
+        <div class="about-item" data-text="Object Oriented Language">
+            <div class="about__content"><img class="about__img" src="https://i.udemycdn.com/course/750x422/25584_2d41_13.jpg" />
+                <h2 class="about__content-title">Java</h2>
+                <p class="about__content-desc">The first language I ever learned. My School is based off of this language and up until now I still think it is a good language for beginners to learn.</p>
             </div>
         </div>
-        <div class="timeline-item" data-text="dsfsdfsdf">
-            <div class="timeline__content"><img class="timeline__img" src="https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499" />
-                <h2 class="timeline__content-title">sdfsdf</h2>
-                <p class="timeline__content-desc">sdoifjsdoifjsdoifnsodivnfsdoin</p>
+        <div class="about-item" data-text="HyperText Markup Language">
+            <div class="about__content"><img class="about__img" src="https://multimedia.journalism.berkeley.edu/wp-content/uploads/css101-main.jpg" />
+                <h2 class="about__content-title">HTML</h2>
+                <p class="about__content-desc">The bases of documenting any web page. It is one of the sole languages used for Web Developers. I defintely need to know this.</p>
             </div>
         </div>
-        
+        <div class="about-item" data-text="Style Sheet Language">
+            <div class="about__content"><img class="about__img" src="https://uploads.toptal.io/blog/image/91625/toptal-blog-image-1441289939715-f71ac4c4849110d4a414f2d4d939c2dd.jpg" />
+                <h2 class="about__content-title">CSS</h2>
+                <p class="about__content-desc">You cant ever make a website look good without this language. Every Programemr needs this to style their pages.</p>
+            </div>
+        </div>
+      <div class="about-item" data-text="Interpreted Language">
+            <div class="about__content"><img class="about__img" src="https://cdn2.itpro.co.uk/sites/itpro/files/styles/article_main_wide_image/public/2018/09/bajavascripthack_shutterstock_720388555.jpg?itok=2Axp53CC" />
+                <h2 class="about__content-title">Javascript</h2>
+                <p class="about__content-desc">My Client side scripting language. Alot of the scolling, the functionality is done by javascript. It is a recent language I learned with the use of applying it to my web pages.</p>
+            </div>
+        </div>
+         <div class="about-item" data-text="Database Language">
+            <div class="about__content"><img class="about__img" src="https://cdn.arstechnica.net/wp-content/uploads/2016/09/sql-injection-1.png" />
+                <h2 class="about__content-title">MySQL</h2>
+                <p class="about__content-desc">The bases for database programming. I just started to learn MySQL. Had a metric's database I needed to build with a team for a project in a Software Engineering class.</p>
+            </div>
+        </div>
+         
             </section>
 <!--End ofAbout-->
 <!--PortFolio-->
 
 <div class="no-padding text-center" id="portfolio">
  <div class="container">
-   <h1>Portfolio</h1>
+   <h1 style="color:white;">Portfolio</h1>
   </div>
   <hr>
   <div class="gallery">
@@ -960,7 +971,7 @@ body {
                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <span class="year">2015</span>
+                <span class="year">2014</span>
                 <span class="month">sdf</span>
                 <p>sdfdsfsdfjsdiofnj</p>
               <a href="#" class="read-more">Read more</a>
@@ -975,7 +986,7 @@ body {
             </div>
             <div class="timeline-carousel__item-inner">
                 <div class="pointer"></div>
-                <span class="month">July 5	</span>
+                <span class="month">July 10	</span>
                 <p>sdfdsfdsf</p>
               <a href="#" class="read-more">Read more</a>
             </div>
@@ -989,7 +1000,7 @@ body {
             </div>
             <div class="timeline-carousel__item-inner">
                 <span class="year">2016</span>
-                <span class="month">January 2</span>
+                <span class="month">January 5</span>
                 <p>sdfsdfsdfsdfsdf</p>
               <a href="#" class="read-more">Read more</a>
             </div>
@@ -1003,7 +1014,7 @@ body {
             </div>
             <div class="timeline-carousel__item-inner">
                 <div class="pointer"></div>
-                <span class="month">January 18	</span>
+                <span class="month">April 20	</span>
                 <p>sdfdsfsfsd	</p>
               <a href="#" class="read-more">Read more</a>
             </div>
@@ -1016,8 +1027,8 @@ body {
                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <span class="year">2017</span>
-                <span class="month">January 5–17</span>
+                <span class="year">2018</span>
+                <span class="month">May 5</span>
                 <p>sdfsdfsd</p>
               <a href="#" class="read-more">Read more</a>
             </div>
@@ -1031,7 +1042,7 @@ body {
             </div>
             <div class="timeline-carousel__item-inner">
                 <div class="pointer"></div>
-                <span class="month">January 3	</span>
+                <span class="month">July 7	</span>
                 <p>dsfsdfsdfsdf</p>
               <a href="#" class="read-more">Read more</a>
             </div>
@@ -1109,12 +1120,12 @@ carousel();
 <!--Script for about-->
 <script>
 (function($) {
-  $.fn.timeline = function() {
+  $.fn.about = function() {
     var selectors = {
       id: $(this),
-      item: $(this).find(".timeline-item"),
-      activeClass: "timeline-item--active",
-      img: ".timeline__img"
+      item: $(this).find(".about-item"),
+      activeClass: "about-item--active",
+      img: ".about__img"
     };
     selectors.item.eq(0).addClass(selectors.activeClass);
     selectors.id.css(
@@ -1163,7 +1174,7 @@ carousel();
   };
 })(jQuery);
 
-$("#about").timeline();
+$("#about").about();
 
 </script>
 
