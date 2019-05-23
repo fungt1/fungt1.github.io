@@ -10,6 +10,8 @@
 /* New imports */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css');
+/*Contact imports*/
+
 
 
 html,
@@ -630,7 +632,7 @@ body {
 	 top: 0;
 	 height: 100%;
 	 width: 6.9444%;
-	 background-color: #1d1d1e;
+	 background-color: black;
 	 z-index: 3;
 	 width: 6.9444%;
 }
@@ -832,7 +834,115 @@ body {
 	 margin-right: 8px;
 	 color: #fff;
 }
+/*End of timeline*/
 
+/*Contact*/
+body {
+		height: 100%;
+		background: black;
+		background-size: cover;
+}
+
+.shade {
+		overflow: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.blackboard {
+		position: relative;
+		width: 640px;
+		margin: 7% auto;
+		border: tan solid 12px;
+		border-top: #bda27e solid 12px;
+		border-left: #b19876 solid 12px;
+		border-bottom: #c9ad86 solid 12px;
+		box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+		background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+		background-color: #333;
+}
+
+.blackboard:before {
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+		border: #2c2c2c solid 2px;
+		content: "Contact";
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2.2em;
+		color: rgba(238, 238, 238, 0.7);
+		text-align: center;
+		padding-top: 20px;
+}
+
+.form {
+		padding: 70px 20px 20px;
+}
+
+p {
+		position: relative;
+		margin-bottom: 1em;
+}
+
+label {
+		vertical-align: middle;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.7);
+}
+
+p:nth-of-type(5) > label {
+		vertical-align: top;
+}
+
+input,
+textarea {
+		vertical-align: middle;
+		padding-left: 10px;
+		background: none;
+		border: none;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.6em;
+		color: rgba(238, 238, 238, 0.8);
+		line-height: .6em;
+		outline: none;
+}
+
+textarea {
+		height: 120px;
+		font-size: 1.4em;
+		line-height: 1em;
+		resize: none;
+}
+
+input[type="submit"] {
+		cursor: pointer;
+		color: rgba(238, 238, 238, 0.7);
+		line-height: 1em;
+		padding: 0;
+}
+
+input[type="submit"]:focus {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+		background: rgba(238, 238, 238, 0.2);
+		color: rgba(238, 238, 238, 0.2);
+		text-shadow: none;
+}
+
+::selection {
+		background: rgba(238, 238, 238, 0.4);
+		color: rgba(238, 238, 238, 0.3);
+		text-shadow: none;
+}
 </style>
 <body>
 
@@ -968,12 +1078,12 @@ body {
         <!--Timeline item-->
         <div class="timeline-carousel__item">
             <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://cdn.makeuseof.com/wp-content/uploads/2013/07/lego-mindstorms-review-6.jpg?26523c') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <span class="year">2014</span>
-                <span class="month">sdf</span>
-                <p>sdfdsfsdfjsdiofnj</p>
+                <span class="year">2008</span>
+                <span class="month">Before or after the year</span>
+                <p>In middle school I took a class that introduced and was based off using Lego Mindstorms to introduce new technology. Getting my own after and thorougly examining it, I was then introduced to the world of programming.</p>
               <a href="#" class="read-more">Read more</a>
             </div>
         </div>
@@ -982,12 +1092,12 @@ body {
         <!--Timeline item-->
         <div class="timeline-carousel__item">
             <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://enacademic.com/pictures/enwiki/67/Chwestsign.JPG') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <div class="pointer"></div>
-                <span class="month">July 10	</span>
-                <p>sdfdsfdsf</p>
+                 <span class="year">2010</span>
+                <span class="month">4 years</span>
+                <p>Attending of high school. Although back then programming classes were limited to some schools and mines did not have it, I stilled continued to learn about programming and wrtie simple programs. </p>
               <a href="#" class="read-more">Read more</a>
             </div>
         </div>
@@ -996,12 +1106,12 @@ body {
        <!--Timeline item-->
         <div class="timeline-carousel__item">
             <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://sites.rowan.edu/registrar/_images/rowan-sign.jpg') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <span class="year">2016</span>
-                <span class="month">January 5</span>
-                <p>sdfsdfsdfsdfsdf</p>
+                <span class="year">2014</span>
+                <span class="month">September 3</span>
+                <p>Attedned Rowan University and started my career into computer science</p>
               <a href="#" class="read-more">Read more</a>
             </div>
         </div>
@@ -1010,12 +1120,26 @@ body {
        <!--Timeline item-->
         <div class="timeline-carousel__item">
             <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://www.thetactilegroup.com/images/logos/tactile-logo.png') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <div class="pointer"></div>
-                <span class="month">April 20	</span>
-                <p>sdfdsfsfsd	</p>
+                <span class="year">2016</span>
+                <span class="month">June 13</span>
+                <p>My first Web Developing internship which was TheTactileGroup. During school and high school the programs I have done were just simple java programs that utilize algorithms or simpmle GUI's. This internship introduced me to the world of web programming. It was my first time being in a working enviorment and interacting with coworkers.</p>
+              <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+       <!--/Timeline item-->
+       
+       <!--Timeline item-->
+        <div class="timeline-carousel__item">
+            <div class="timeline-carousel__image">
+                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://hiddencityphila.org/wp-content/gallery/calder-white-cascade/caldermobile04.jpg') center center; background-size:cover;"></div>
+            </div>
+            <div class="timeline-carousel__item-inner">
+                <span class="year">2019</span>
+                <span class="month">May 21</span>
+                <p>My second web devleoping internship which was the Federal Reserve Bank of Philadelphia. By then I was more familiar with web developing. This internship intorduced new platforms and a different side to web developing. My first internship was more front-edn developing while this internship was more back-end devloping. I also met many new collegues that taught me alot.</p>
               <a href="#" class="read-more">Read more</a>
             </div>
         </div>
@@ -1027,23 +1151,9 @@ body {
                 <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
             </div>
             <div class="timeline-carousel__item-inner">
-                <span class="year">2018</span>
-                <span class="month">May 5</span>
-                <p>sdfsdfsd</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
-        </div>
-       <!--/Timeline item-->
-       
-       <!--Timeline item-->
-        <div class="timeline-carousel__item">
-            <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('https://static.toiimg.com/thumb/44945488/Nice-in-pictures.jpg?width=748&height=499') center center; background-size:cover;"></div>
-            </div>
-            <div class="timeline-carousel__item-inner">
-                <div class="pointer"></div>
-                <span class="month">July 7	</span>
-                <p>dsfsdfsdfsdf</p>
+                  <span class="year">Continue</span>
+                <span class="month">Present</span>
+                <p>My journey does not end as I finish my last semester of college at the end of 2019. Updates will continue</p>
               <a href="#" class="read-more">Read more</a>
             </div>
         </div>
@@ -1052,6 +1162,35 @@ body {
 </section>
 
 <!--End of timeline-->
+<!--Contact-->
+<section class="shade" id="contact">
+		<div class="blackboard">
+				<div class="form">
+						<p>
+								<label>Name: </label>
+								<input type="text" />
+						</p>
+						<p>
+								<label>Email: </label>
+								<input type="text" />
+						</p>
+						<p>
+								<label>Subject: </label>
+								<input type="text" />
+						</p>
+						<p>
+								<label>Message: </label>
+								<textarea></textarea>
+						</p>
+						<p class="wipeout">
+								<input type="submit" value="Send" />
+						</p>
+				</div>
+		</div>
+</section>
+
+<!--End of contact-->
+
 </body>
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -1176,6 +1315,6 @@ carousel();
 
 $("#about").about();
 
-</script>
 
+</script>
 </html>
