@@ -1,8 +1,3 @@
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    
-
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
   
         $(window).scroll(function() {
@@ -29,10 +24,6 @@ $(document).on('click','a.page-scroll',function(event){
   event.preventDefault();
 });
 });
-
-
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 <!-- For Timeline-->
 
 $.js = function (el) {
@@ -60,8 +51,6 @@ function carousel() {
 }
 
 carousel();
-
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <!--Script for about-->
 
 (function($) {
