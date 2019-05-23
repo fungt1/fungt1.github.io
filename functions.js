@@ -1,5 +1,10 @@
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
-  
+    <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -24,8 +29,12 @@ $(document).on('click','a.page-scroll',function(event){
   event.preventDefault();
 });
 });
-<!-- For Timeline-->
 
+</script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<!-- For Timeline-->
+<script>
 $.js = function (el) {
     return $('[data-js=' + el + ']')
 };
@@ -51,8 +60,10 @@ function carousel() {
 }
 
 carousel();
+</script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <!--Script for about-->
-
+<script>
 (function($) {
   $.fn.about = function() {
     var selectors = {
@@ -110,4 +121,4 @@ carousel();
 
 $("#about").about();
 
-
+</script>
